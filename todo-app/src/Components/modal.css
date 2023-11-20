@@ -1,0 +1,86 @@
+.modalBackground {
+    position: fixed;
+    left: 31%;
+    bottom: 25%;
+  }
+  
+  .modalContainer {
+    width: 450px;
+    height: 320px;
+    left: 50%;
+    border-radius: 12px;
+    background-color: #ecedf6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 25px;
+  }
+  
+  .modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  /* .modalContainer .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+  } */
+  
+  .footer {
+padding: 15px;
+
+  }
+  
+  .modalContainer .footer button {
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+  background-color: #646ff0;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #cancelBtn {
+  background-color: #cccdde;
+  }
+  .text{
+    font-size: large;
+    color: #646681;
+    /* margin: 0; */
+    /* padding-bottom: 10%; */
+  }
+  .field{
+    border: 1px solid white;
+    padding: 10px;
+    width: 95%;
+    font-size: medium;
+    box-sizing: border-box;
+  }
+.listbox{
+  background-color: white;
+  padding: 5px;
+}
+.innerlist{
+  list-style-type: none;
+}
+.list{
+  background-attachment: red;
+}

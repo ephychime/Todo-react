@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,62 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+.heading{
+  padding: 10px;
+  text-align: center;
+  color: #646681;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
+.page {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.second {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+}
+
+.btn {
+  color: white;
+  font-size: medium;
+  width: 15%;
+  padding: px;
+  border-radius: 5px;
+  background-color: #646ff0;
+  border: #646ff0;
+}
+
+.drop-dwn {
+  padding: 12px;
+  background-color: #cccdde;
+  width: 22%;
+  font-size: medium;
+  border-radius: 5px;
+  border: #cccdde;
+}
+
+.third-box {
+  padding-bottom: 10%;
+  background-color: #ecedf6;
+  padding: 20px;
+  border-radius: 7px;
+  
+}
+
+.inner-box {
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #dedfe1;
+  width: 80px;
+  margin: 0 auto;
+}
+

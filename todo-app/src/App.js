@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React, { useState } from "react";
+import "./App.css";
+import Modal from "./Components/modal";
+import TaskList from "./Components/tasklist";
 
 function App() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [tasks, setTasks] = useState([]);
+
+  const addTask = (newTask) => {
+    setTasks([...tasks, newTask]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="page">
+      <h1 className="heading">TODO LIST</h1>
+      <div className="second">
+        <button
+          className="btn"
+          onClick={() => {
+            setModalOpen(true);
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          Add Task
+        </button>
+        <select className="drop-dwn">
+          <option>All</option>
+          <option>Incomplete</option>
+          <option>Completed</option>
+        </select>
+        {modalOpen && <Modal setOpenModal={setModalOpen} onTaskAdd={addTask} />}
+      </div>
+
+      <div className='third-box'>
+      {tasks.length === 0 ? <p className='inner-box'>No Todos</p> :  <TaskList tasks={tasks} />}
+      
+    </div>
+    
+     
     </div>
   );
 }
